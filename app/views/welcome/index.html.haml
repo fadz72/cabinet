@@ -1,2 +1,18 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+#banner
+	.banner_content
+		%h1 File Cabinet
+		%p Your life's work. Organized, always
+		%button= link_to "Enter", new_user_registration_path
+
+		#callouts
+			.callout_inner
+				.wrapper
+					.callout
+					%h2 Organize
+					%p Drinking vinegar pork belly gastropub, iPhone occupy sriracha blog waistcoat godard typewriter intelligentsia 90's flannel. Raw denim VHS fanny pack, brooklyn green juice narwhal williamsburg tofu. IPhone beard yuccie drinking vinegar gentrify organic tacos chicharrones, lumbersexual pour-over. Poutine retro 8-b
+
+#button_cta
+	.wrapper
+	%h2 Go Ahead
+	%br
+	%button= link_to "Join Now", new_user_registration_path
