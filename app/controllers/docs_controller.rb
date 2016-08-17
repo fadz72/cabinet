@@ -6,7 +6,7 @@ class DocsController < ApplicationController
 	end
 
 	def show
-		
+		#in before action
 	end
 
 	def new
@@ -29,7 +29,7 @@ class DocsController < ApplicationController
 
 	def update
 		if @doc.update(doc_params)
-			redirect_to@doc
+			redirect_to @doc
 		else
 			render "edit"
 		end
@@ -44,7 +44,7 @@ class DocsController < ApplicationController
 	private
 
 		def find_doc
-			@doc = Doc.find([:id])
+			@doc = Doc.find(params[:id])
 		end
 
 		def doc_params
